@@ -1,0 +1,3 @@
+*.o
+logicsim/
+hw3_tests/
