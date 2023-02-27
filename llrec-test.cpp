@@ -2,6 +2,8 @@
 #include <fstream>
 #include <functional>
 #include "llrec.h"
+#include "stack.h"
+
 using namespace std;
 
 /**
@@ -86,9 +88,17 @@ int main(int argc, char* argv[])
     print(head);
 
     // Test out your linked list code
+    Node* l = nullptr;
+    Node* h = nullptr;
 
+    llpivot(head, l, h, 10);
 
-
+    cout << "Small list: ";
+    print(l);
+    cout << "Big list: ";
+    print(h);
+    cout << "Original list: ";
+    print(head);
     
     return 0;
 
